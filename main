@@ -1,0 +1,84 @@
+
+
+# zdefiniowanie listy teatrów
+teatry: list = [
+    {'nazwa': 'Teatr Wielki - Opera Narodowa', 'adres': 'plac Teatralny 1', 'współrzędne': (52.2431, 21.0095)},
+    {'nazwa': 'Teatr Narodowy', 'adres': 'plac Teatralny 3', 'współrzędne': (52.2434, 21.0098)},
+    {'nazwa': 'Teatr Powszechny im. Zygmunta Hübnera', 'adres': ,ul. Jana Zamoyskiego 20', (52.2474, 21.0347)},
+    {'nazwa': 'Teatr Dramatyczny m.st. Warszawy', 'adres': 'plac Defilad 1', (52.2317, 21.0053)},
+    {'nazwa':  'Teatr Współczesny w Warszawie', 'adres': ul. Mokotowska 13', (52.2232, 21.0181)zzzz},
+]
+
+# zdefiniowanie listy klientów poszczególnych teatrów wraz z obejrzanymi przez nich spektaklami
+klienci = {
+    'Teatr Wielki - Opera Narodowa': {
+        'Jan Kowalski': ['Ambasador', 'Bal manekinów'],
+        'Anna Nowak': ['Czarownice z Salem', 'Dziady cz.I'],
+        'Marek Zalewski': ['Emigranci', 'Hedda Gabler'],
+    },
+    'Teatr Narodowy': {
+        'Magda Kowalczyk': ['Kalkwerk', 'Lorenzaccio'],
+        'Jacek Wójcik': ['Matka', 'Niespodzianka'],
+        'Paweł Zieliński': ['Ożenek', '	Pułapka'],
+    },
+    'Teatr Powszechny im. Zygmunta Hübnera': {
+        'Katarzyna Kwiatkowska': ['	Rewizor', 'Samobójca'],
+        'Krzysztof Zając': ['W małym dworku', 'Wujaszek Wania'],
+        'Dorota Czarnecka': ['Hamlet', 'Mistrz'],
+    },
+    'Teatr Dramatyczny m.st. Warszawy': {
+        'Michał Piotrowski': ['Otello', 'Proces'],
+        'Monika Piotrowska': ['Stalin', 'Zbrodnia i kara'],
+        'Zofia Piotrowska': ['Noc listopadowa', 'Ławeczka'],
+    },
+    'Teatr Współczesny w Warszawie': {
+        'Sylwia Kamińska': ['Świętoszek', ''],
+        'Rafał Kamiński': ['Spektakl AA', 'Spektakl BB'],
+        'Zbigniew Zając': ['Spektakl CC', 'Spektakl DD'],
+    },
+}
+
+# zdefiniowanie listy pracowników listy poszczególnych teatrów
+pracownicy = {
+    'Teatr Wielki - Opera Narodowy':['Marcin Kowalski', 'Tomasz Nowak', 'Anna Pawlak', 'Dominik Król'],
+    'Teatr Narodowy': ['Tomasz Nowak', 'Andrzej Martyniuk', 'Jacek Pawlak' 'Antonina Kot'],
+    'Teatr Powszechny im. Zygmunta Hübnera': ['Jacek Król', 'Dominika Wićkowska', 'Adam Mróz', 'Jan Miód'],
+    'Teatr Dramatyczny m. st. Warszawy': ['Paweł Kwiatkowski, 'Karol Kwiatkowski', ,Jagoda Szymczuk', 'Sławomir Gola'],
+    'Teatr Współczesny w Warszawie': ['Krzysztof Lewandowski', 'Dominik Nowicki'
+
+
+# funkcja wyświetlająca listę teatrów
+def wyswietl_teatry():
+    print("Lista teatrów:")
+    for teatr in teatry:
+        print(f"- {teatr['nazwa']}, adres: {teatr['adres']}, współrzędne: {teatr['współrzędne']}")
+
+# funkcja wyświetlająca listę klientów dla wybranego teatru
+def wyswietl_klientow_teatru():
+    nazwa_teatru = input("Wpisz nazwę teatru: ")
+    print(f'WITAJ w {nazwa_teatru}')
+
+    if nazwa_teatru in klienci:
+        print("Lista klientów tego teatru:")
+        for klient in klienci[nazwa_teatru]:
+            print(f'- {klient}')
+    else:
+        print("Nie znaleziono teatru o podanej nazwie.")
+
+# funkcja wyświetlająca listę pracowników dla wybranego teatru
+def wyswietl_pracownikow_teatru():
+    nazwa_teatru = input("Wpisz nazwę teatru: ")
+    print(f'WITAJ w {nazwa_teatru}')
+
+    if nazwa_teatru in pracownicy:
+        print("Lista pracowników tego teatru:")
+        for pracownik in pracownicy[nazwa_teatru]:
+            print(f'- {pracownik}')
+    else:
+        print("Nie znaleziono teatru o podanej nazwie.")
+
+# wywołanie funkcji
+
+wyswietl_teatry()
+wyswietl_klientow_teatru()
+wyswietl_pracownikow_teatru()
