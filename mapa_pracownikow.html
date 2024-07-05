@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9cb0f3d38bb3555e8b9c508475cb6f29 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9cb0f3d38bb3555e8b9c508475cb6f29" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9cb0f3d38bb3555e8b9c508475cb6f29 = L.map(
+                "map_9cb0f3d38bb3555e8b9c508475cb6f29",
+                {
+                    center: [52.235, 21.015],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f833230ff8f107993649bc6d68d90118 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f833230ff8f107993649bc6d68d90118.addTo(map_9cb0f3d38bb3555e8b9c508475cb6f29);
+        
+    
+            var marker_698ca31dbaedd25be3504433654a6c59 = L.marker(
+                [52.243, 21.001],
+                {}
+            ).addTo(map_9cb0f3d38bb3555e8b9c508475cb6f29);
+        
+    
+        var popup_1c6a28b0f122bfd848e170b9c594897c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd20820111a1a9039b2e94ee3eee79f7 = $(`<div id="html_dd20820111a1a9039b2e94ee3eee79f7" style="width: 100.0%; height: 100.0%;">Michał Lewandowski (Teatr Wielki)</div>`)[0];
+                popup_1c6a28b0f122bfd848e170b9c594897c.setContent(html_dd20820111a1a9039b2e94ee3eee79f7);
+            
+        
+
+        marker_698ca31dbaedd25be3504433654a6c59.bindPopup(popup_1c6a28b0f122bfd848e170b9c594897c)
+        ;
+
+        
+    
+    
+            marker_698ca31dbaedd25be3504433654a6c59.bindTooltip(
+                `<div>
+                     Michał Lewandowski
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7a55eff616a422b1bef304ea7ae64dd = L.marker(
+                [52.243, 21.001],
+                {}
+            ).addTo(map_9cb0f3d38bb3555e8b9c508475cb6f29);
+        
+    
+        var popup_c18496104ece95a9cae6b766b9214162 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f7a2d9f9e867da7bce3be35d6897ebd = $(`<div id="html_6f7a2d9f9e867da7bce3be35d6897ebd" style="width: 100.0%; height: 100.0%;">Zofia Kaczmarek (Teatr Wielki)</div>`)[0];
+                popup_c18496104ece95a9cae6b766b9214162.setContent(html_6f7a2d9f9e867da7bce3be35d6897ebd);
+            
+        
+
+        marker_e7a55eff616a422b1bef304ea7ae64dd.bindPopup(popup_c18496104ece95a9cae6b766b9214162)
+        ;
+
+        
+    
+    
+            marker_e7a55eff616a422b1bef304ea7ae64dd.bindTooltip(
+                `<div>
+                     Zofia Kaczmarek
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed19fce8559b4ba5d356e0f8b5e5946d = L.marker(
+                [52.243, 21.002],
+                {}
+            ).addTo(map_9cb0f3d38bb3555e8b9c508475cb6f29);
+        
+    
+        var popup_c5045dbb73cca039d2b44b1929410100 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be9c7bdf8ddd41a4932daee843822bb0 = $(`<div id="html_be9c7bdf8ddd41a4932daee843822bb0" style="width: 100.0%; height: 100.0%;">Katarzyna Zielińska (Teatr Narodowy)</div>`)[0];
+                popup_c5045dbb73cca039d2b44b1929410100.setContent(html_be9c7bdf8ddd41a4932daee843822bb0);
+            
+        
+
+        marker_ed19fce8559b4ba5d356e0f8b5e5946d.bindPopup(popup_c5045dbb73cca039d2b44b1929410100)
+        ;
+
+        
+    
+    
+            marker_ed19fce8559b4ba5d356e0f8b5e5946d.bindTooltip(
+                `<div>
+                     Katarzyna Zielińska
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

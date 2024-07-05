@@ -2,7 +2,7 @@ import folium
 import webbrowser
 from geopy.geocoders import Nominatim
 
-# Listy teatrów
+# Listy
 teatry = [
     {"nazwa": "Teatr Wielki", "adres": "plac Teatralny 1, Warszawa", "współrzędne": "52.24356, 21.00142"},
     {"nazwa": "Teatr Narodowy", "adres": "plac Teatralny 3, Warszawa", "współrzędne": "52.2446, 21.0035"}

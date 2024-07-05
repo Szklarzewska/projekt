@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3d3d3e303dc28fd1703f44452851848d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3d3d3e303dc28fd1703f44452851848d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3d3d3e303dc28fd1703f44452851848d = L.map(
+                "map_3d3d3e303dc28fd1703f44452851848d",
+                {
+                    center: [52.237049, 21.017532],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e3ae1fdd9ebb1dc069f90cb3458def8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3e3ae1fdd9ebb1dc069f90cb3458def8.addTo(map_3d3d3e303dc28fd1703f44452851848d);
+        
+    
+            var marker_33ab00b2d7afbd2da930fdb2d78bf6b0 = L.marker(
+                [52.2431, 21.0095],
+                {}
+            ).addTo(map_3d3d3e303dc28fd1703f44452851848d);
+        
+    
+        var popup_9763b8026e0b0743e13fe6947d154610 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad680bd95514e0819c867a6267c5c5f4 = $(`<div id="html_ad680bd95514e0819c867a6267c5c5f4" style="width: 100.0%; height: 100.0%;">Teatr Wielki<br>plac Teatralny 1</div>`)[0];
+                popup_9763b8026e0b0743e13fe6947d154610.setContent(html_ad680bd95514e0819c867a6267c5c5f4);
+            
+        
+
+        marker_33ab00b2d7afbd2da930fdb2d78bf6b0.bindPopup(popup_9763b8026e0b0743e13fe6947d154610)
+        ;
+
+        
+    
+    
+            marker_33ab00b2d7afbd2da930fdb2d78bf6b0.bindTooltip(
+                `<div>
+                     Teatr Wielki
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8eb7787ef518944f3c830d4c1071b083 = L.marker(
+                [52.2434, 21.0098],
+                {}
+            ).addTo(map_3d3d3e303dc28fd1703f44452851848d);
+        
+    
+        var popup_5796f232e1751a2a4cf25775e6e1602c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39241753e53fe6fb63d3958a2d9710cd = $(`<div id="html_39241753e53fe6fb63d3958a2d9710cd" style="width: 100.0%; height: 100.0%;">Teatr Narodowy<br>plac Teatralny 3</div>`)[0];
+                popup_5796f232e1751a2a4cf25775e6e1602c.setContent(html_39241753e53fe6fb63d3958a2d9710cd);
+            
+        
+
+        marker_8eb7787ef518944f3c830d4c1071b083.bindPopup(popup_5796f232e1751a2a4cf25775e6e1602c)
+        ;
+
+        
+    
+    
+            marker_8eb7787ef518944f3c830d4c1071b083.bindTooltip(
+                `<div>
+                     Teatr Narodowy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cf8288670bb6ff9e7eb66527fc0368f = L.marker(
+                [52.2474, 21.0347],
+                {}
+            ).addTo(map_3d3d3e303dc28fd1703f44452851848d);
+        
+    
+        var popup_3c6cc6afa62c489bf5a1070bf45fd5af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46d52d83affb6fca95907bbd225cb688 = $(`<div id="html_46d52d83affb6fca95907bbd225cb688" style="width: 100.0%; height: 100.0%;">Teatr Powszechny im. Zygmunta Hübnera<br>ul.Jana Zamoyskiego 20</div>`)[0];
+                popup_3c6cc6afa62c489bf5a1070bf45fd5af.setContent(html_46d52d83affb6fca95907bbd225cb688);
+            
+        
+
+        marker_1cf8288670bb6ff9e7eb66527fc0368f.bindPopup(popup_3c6cc6afa62c489bf5a1070bf45fd5af)
+        ;
+
+        
+    
+    
+            marker_1cf8288670bb6ff9e7eb66527fc0368f.bindTooltip(
+                `<div>
+                     Teatr Powszechny im. Zygmunta Hübnera
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_019d035435cd0a49c490b75293e07adf = L.marker(
+                [52.2317, 21.0053],
+                {}
+            ).addTo(map_3d3d3e303dc28fd1703f44452851848d);
+        
+    
+        var popup_0eb2ffd37ad1ae9e32d45d8605f681de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46928e2f79a31e37dd8605be86b74074 = $(`<div id="html_46928e2f79a31e37dd8605be86b74074" style="width: 100.0%; height: 100.0%;">Teatr Dramatyczny m.st. Warszawy<br>plac Defilad 1</div>`)[0];
+                popup_0eb2ffd37ad1ae9e32d45d8605f681de.setContent(html_46928e2f79a31e37dd8605be86b74074);
+            
+        
+
+        marker_019d035435cd0a49c490b75293e07adf.bindPopup(popup_0eb2ffd37ad1ae9e32d45d8605f681de)
+        ;
+
+        
+    
+    
+            marker_019d035435cd0a49c490b75293e07adf.bindTooltip(
+                `<div>
+                     Teatr Dramatyczny m.st. Warszawy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df6a75b2e9649000ecfb678da6d13b8d = L.marker(
+                [52.2365, 21.0287],
+                {}
+            ).addTo(map_3d3d3e303dc28fd1703f44452851848d);
+        
+    
+        var popup_e42bd0b19ea97db017e0b5f5610072f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d38309ece0d2a841e30c612cc9611f17 = $(`<div id="html_d38309ece0d2a841e30c612cc9611f17" style="width: 100.0%; height: 100.0%;">Teatr Współczesny w Warszawie<br>ul.Mokotowska 13</div>`)[0];
+                popup_e42bd0b19ea97db017e0b5f5610072f1.setContent(html_d38309ece0d2a841e30c612cc9611f17);
+            
+        
+
+        marker_df6a75b2e9649000ecfb678da6d13b8d.bindPopup(popup_e42bd0b19ea97db017e0b5f5610072f1)
+        ;
+
+        
+    
+    
+            marker_df6a75b2e9649000ecfb678da6d13b8d.bindTooltip(
+                `<div>
+                     Teatr Współczesny w Warszawie
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
